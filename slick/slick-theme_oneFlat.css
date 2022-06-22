@@ -16,8 +16,8 @@
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
-.slick-prev,
-.slick-next
+.about-slider .slick-prev,
+.about-slider .slick-next
 {
     font-size: 0;
     line-height: 0;
@@ -41,7 +41,16 @@
     outline: none;
     background: #2B7AF1;;
     border-radius: 50%;
+    
 }
+@media screen and (max-width:1024px) {
+    .about-slider .slick-prev,
+    .about-slider .slick-next{
+        width: 30px;
+        height: 30px;
+    }
+}   
+
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -76,9 +85,15 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev
+.about-slider .slick-prev
 {
     left: -60px;
+    
+}
+@media screen and (max-width:1024px){
+    .about-slider .slick-prev{
+        left: -40px;
+    }
 }
 [dir='rtl'] .slick-prev
 {
@@ -94,11 +109,16 @@
     content: url(../img/arrow.png);
 }
 
-.slick-next
-{
+.about-slider .slick-next{
     right: -60px;
     top: 25px;
     transform: rotate(180deg);
+    
+}
+@media screen and (max-width:1024px) {
+    .about-slider .slick-next{
+        right: -40px;
+    }
 }
 [dir='rtl'] .slick-next
 {
@@ -121,10 +141,10 @@
     margin-bottom: 30px;
 }
 
-.slick-dots
+.about-slider .slick-dots
 {
     position: absolute;
-    bottom: -85px;
+    bottom: -35px;
 
     display: block;
 
@@ -177,7 +197,7 @@
 {
     opacity: 1;
 }
-.slick-dots li button:before
+.about-slider .slick-dots li button:before
 {
     font-family: 'slick';
     font-size: 6px;
@@ -194,8 +214,8 @@
     text-align: center;
     border-radius: 100px;
     color: transparent;
-    border: 1px solid white;
-
+    border: 1px solid rgba(17, 17, 17, 0.5);
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -206,6 +226,6 @@
     width: 20px;
     height: 10px;
    border: none;
-    background: #2B7AF1;;
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
     border-radius: 100px;
 }

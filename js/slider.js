@@ -35,7 +35,17 @@ $('.slider').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.about-slider--second'
+    asNavFor: '.about-slider--second',
+    responsive: [
+      {
+        breakpoint: 425,
+        settings: {
+          arrows: false,
+          dots:true,
+        }
+      },
+      
+    ]
   });
   $('.about-slider--second').slick({
     slidesToShow: 4,

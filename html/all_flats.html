@@ -13,6 +13,8 @@
    <header class="header">
        <div class="menu">
            <div class="header-logo"><img src="../img/logo.png" alt="" class="header-logo__img"></div>
+           <input type="checkbox" id="bur" class="burger">
+            <label for="bur" class="burger-img"></label>
            <div class="nav">
                <ul class="nav-list">
                    <li class="nav-list__item"><a href="../index.html" class="nav-list__link">Main</a></li>
@@ -40,11 +42,12 @@
                    <a href="tel:+380950334442" class="contact-item__link">+380(95)033-44-42</a>
                </div>
            </div>
-           <div class="feedback" onclick="sendTrue(this)">
-            <a class="feedback__link">Order a call</a>
-        </div>
+            <div class="feedback" onclick="sendTrue(this)">
+                <a class="feedback__link">Order a call</a>
+            </div>
+            
        </div>
-       
+       <div class="popUp"></div>
    </header>
 <main class="main">
     <section class="allFlats" id="flats">
@@ -129,18 +132,18 @@
     <section class="about" id="about">
         <h2 class="about__title">About us</h2>
         <div class="about-content">
-            <p class="about-content__desc b1">Today, Domashnaya Hotel is one of the largest hotel chains, dynamically expanding its geographical coverage and improving the quality of service.</p>
-            <div class="plus b2">
+            <p class="about-content__desc" style="grid-area: b1">Today, Domashnaya Hotel is one of the largest araptment chains, dynamically expanding its geographical coverage and improving the quality of service.</p>
+            <div class="plus" style="grid-area: b2">
                 <img src="../img/deal 1.png" alt="" class="plus__img c1">
                 <p class="plus__number c2">40+</p>
                 <p class="plus__text c3">Clients</p>
             </div>
-            <div class="plus b3">
+            <div class="plus" style="grid-area: b3">
                 <img src="../img/review 2.png" alt="" class="plus__img c1">
                 <p class="plus__number c2" >100+</p>
                 <p class="plus__text c3" >Responses</p>
             </div>
-            <div class="plus b4">
+            <div class="plus" style="grid-area: b4">
                 <img src="../img/home 1.png" alt="" class="plus__img c1">
                 <p class="plus__number  c2">9</p>
                 <p class="plus__text c3">Apartments</p>
