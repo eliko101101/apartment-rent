@@ -42,6 +42,7 @@ $('.slider').slick({
         settings: {
           arrows: false,
           dots:true,
+          autoplay: true,
         }
       },
       

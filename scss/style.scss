@@ -76,10 +76,7 @@ body{
                     @media screen and (max-width:1200px) {
                         @include text(#fff,600,18px,22px);
                         padding-left: 4px;
-                        &:hover{
-                            border-bottom: none;
-                            padding-bottom: 0;
-                        }
+                        
                     }
                     &:hover{
                         border-bottom: 2px solid #111;
@@ -389,6 +386,8 @@ body{
                 }
                 &__address{
                     @include text(#333,400,18px,22px);
+                    display: flex;
+                    align-items: center;
                     @media screen and (max-width:1024px) {
                         font-size: 14px;
                         line-height: 17px;
@@ -970,11 +969,14 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                min-height: 292px;
                 @media screen and (max-width:1024px) {
                     padding: 10px 20px;
+                    
                 }
                 @media screen and (max-width:768px) {
-                    margin-left: 0;
+                    margin-left: 5px;
+                    min-height: 175px;
                 }
                 &__desc{
                     display: flex;
@@ -1038,6 +1040,7 @@ body{
             background: white;
             position: absolute;
             left: 400px;
+            max-width: 236px;
             @media screen and (max-width:1940px) {
                 left: 100px; 
             }
@@ -1083,6 +1086,7 @@ body{
                     padding: 10px 20px;
                     margin-top: 15px;
                     width:100%;
+                    max-width: 240px;
                     @media screen and (max-width:768px) {
                         font-size: 12px;
                         line-height: 16px;
@@ -1345,7 +1349,14 @@ body{
 //=========styles for burger ======
 @media only screen and (max-width: 1200px) {
     
-
+    .header .menu .nav-list__link:hover{
+        
+            border-bottom: none;
+            text-decoration: none;
+            padding-bottom: 0;
+       
+    }
+    
     .burger-img,
     .burger-img:before,
     .burger-img:after {
@@ -1391,4 +1402,5 @@ body{
     .burger:checked ~ .burger-img:after {
         display: none;
     }
+    
 }

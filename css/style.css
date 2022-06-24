@@ -122,10 +122,6 @@ body {
     line-height: 22px;
     padding-left: 4px;
   }
-  .header .menu .nav-list__link:hover {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
 }
 .header .menu .nav-list__link:hover {
   border-bottom: 2px solid #111;
@@ -632,6 +628,12 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 1024px) {
   .main .oneFlat .about-desc__address {
@@ -1819,6 +1821,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: 292px;
 }
 @media screen and (max-width: 1024px) {
   .main .response .slider-item {
@@ -1827,7 +1830,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .main .response .slider-item {
-    margin-left: 0;
+    margin-left: 5px;
+    min-height: 175px;
   }
 }
 .main .response .slider-item__desc {
@@ -1931,6 +1935,7 @@ body {
   background: white;
   position: absolute;
   left: 400px;
+  max-width: 236px;
 }
 @media screen and (max-width: 1940px) {
   .main .write-form {
@@ -2009,6 +2014,7 @@ body {
   padding: 10px 20px;
   margin-top: 15px;
   width: 100%;
+  max-width: 240px;
 }
 @media screen and (max-width: 768px) {
   .main .write-form form textarea {
@@ -2438,6 +2444,12 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
+  .header .menu .nav-list__link:hover {
+    border-bottom: none;
+    text-decoration: none;
+    padding-bottom: 0;
+  }
+
   .burger-img,
 .burger-img:before,
 .burger-img:after {
